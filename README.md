@@ -4,7 +4,7 @@
 
 ### Challenges
 
-:white_check_mark: 001 - 100 Days Css Challenge
+:white_check_mark:  001 - [100 Days Css Challenge](https://github.com/alinedmelo/100dayscss/tree/master/001)
 
 :x: 002 - Menu Icon
 
@@ -14,7 +14,7 @@
 
 :x: 005
 
-:x: 006
+:white_check_mark: 006 - [Profile](https://github.com/alinedmelo/100dayscss/tree/master/006)
 
 :x: 007
 

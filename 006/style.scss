@@ -1,0 +1,61 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:600,300);
+
+$font: 'Open Sans', sans-serif;
+$default-color: #f9f9f9;
+$primary-color: #f32ff2;
+$secondary-color: #eff0f1;
+$primary-gradient: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+$secondary-gradient: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+
+body {
+    margin: 0;
+    font-family: $font;
+    background: $primary-gradient;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card {
+    display: flex;
+    justify-content: center;
+    background-color: $default-color;
+    margin: 50px;
+    width: 980px;
+    height: 90%;
+    border-radius: 5px;
+    box-shadow: 5px 5px 25px rgba(0, 0 ,0, .3);
+}
+.profile {
+    width: 70%;
+}
+.picture {
+    img {
+        border-radius: 50%;
+        :before {
+            content: '';
+            border: 2px solid red;
+        }
+    }
+}
+.side-bar {
+    width: 30%;
+}
+.nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    
+    li {
+        height: 100%;
+        list-style: none;
+        text-align: center;
+        background: $secondary-color;
+
+        :hover {
+            border-right: 2px solid red;
+        }
+    }
+}
