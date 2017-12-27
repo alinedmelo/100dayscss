@@ -2,8 +2,8 @@
 
 $font: 'Open Sans', sans-serif;
 $default-color: #f9f9f9;
-$primary-color: #f32ff2;
-$secondary-color: #eff0f1;
+$primary-color: #2d6a98;
+$secondary-color: #e0e9f1;
 $primary-gradient: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
 $secondary-gradient: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
 
@@ -15,47 +15,136 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    color: #494b4e;
 }
 .card {
     display: flex;
     justify-content: center;
     background-color: $default-color;
     margin: 50px;
-    width: 980px;
-    height: 90%;
-    border-radius: 5px;
-    box-shadow: 5px 5px 25px rgba(0, 0 ,0, .3);
+    width: 780px;
+    min-height: auto;
+    box-shadow: 8px 8px 35px rgba(0, 0 ,0, .3);
 }
 .profile {
-    width: 70%;
+    width: 60%;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    align-content: space-around;
+    align-items: center;
+    padding: 40px;
+    text-align: center;
 }
 .picture {
     img {
         border-radius: 50%;
-        :before {
-            content: '';
-            border: 2px solid red;
+        width: 130px;
+        height: 130px;
+    }
+    &:hover {
+        cursor: pointer;
+        .circle-1 {
+            transform: rotate(360deg);
         }
+        .circle-2 {
+            transform: rotate(-360deg);
+        }
+    }
+    .circle-1 {
+        position: absolute;
+        box-sizing: border-box;
+        margin: -5px -4px;
+        width: 140px;
+        height: 140px;
+        border-radius: 50%;
+        border-width: 1px;
+        border-style: solid;
+        border-color: $primary-color $primary-color $primary-color transparent;
+        transition: all 1.5s ease-in-out;
+    }
+    .circle-2 {
+        @extend .circle-1;
+        margin: -10px -9px;
+        height: 150px;
+        width: 150px;
+        border-color: $primary-color transparent $primary-color $primary-color;
+    }
+}
+.name {
+    h1 {
+        margin-bottom: 0;
+        color: $primary-color !important;
+        font-size: 30px;
+        line-height: 32px;
+    }
+    p {
+        margin-top: 0;
+        font-style: italic;
+    }
+    margin: 0 0 40px;
+}
+.action {
+    display: flex;
+    flex-flow: column;
+    width: calc(100% / 2);
+
+    .button {
+        margin-top: 20px;
+        padding: 5px;
+        height: 45px;
+        font-size: 100%;
+        line-height: 20px;
+        border-radius: 25px;
+        background-color: $default-color;
+        border: 2px solid $primary-color;
+        color: $primary-color;
+        box-shadow: 1px 2px 8px rgba(0, 0 ,0, .3);
+        cursor: pointer;
+        transition: all .2s ease-out;
+    }
+    :hover {
+        background-color: $primary-color;
+        color: $default-color;
+        transition: all .2s ease-in;
+    }
+    :first-child {
+        margin-top: 0;
+    }    
+     :focus {
+        outline: -webkit-focus-ring-color auto 0;
     }
 }
 .side-bar {
-    width: 30%;
+    width: 40%;
 }
-.nav {
+.stats {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     width: 100%;
     height: 100%;
     
-    li {
+    .box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: column;
         height: 100%;
+        padding: 40px;
         list-style: none;
         text-align: center;
         background: $secondary-color;
-
-        :hover {
-            border-right: 2px solid red;
-        }
+        margin-bottom: 5px;
+    }
+    :last-child {
+        margin-bottom: 0;
+    }
+    span {
+        display: inline-block;
+    }
+    .number {
+        color: $primary-color;
+        font-size: 220%;
     }
 }

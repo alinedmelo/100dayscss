@@ -14,7 +14,7 @@
 
 :x: 005
 
-:white_check_mark: 006 - [Profile](https://github.com/alinedmelo/100dayscss/tree/master/006)
+:white_check_mark: 006 - [Profile Card](https://github.com/alinedmelo/100dayscss/tree/master/006)
 
 :x: 007
 
