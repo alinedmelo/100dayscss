@@ -6,7 +6,7 @@
 
 :white_check_mark:  001 - [100 Days Css Challenge](https://github.com/alinedmelo/100dayscss/tree/master/001)
 
-:x: 002 - Menu Icon
+:white_check_mark:  002 - [Menu Icon](https://github.com/alinedmelo/100dayscss/tree/master/002)
 
 :x: 003
 
