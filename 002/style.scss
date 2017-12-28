@@ -1,6 +1,7 @@
 body {
     margin: 0;
 }
+
 .container {
     display: flex;
     justify-content: center;
@@ -9,6 +10,7 @@ body {
     width: 100vw;
     background-color: #4bb9bf;
 }
+
 .menu-icon {
     cursor: pointer;
     height: auto;
@@ -16,6 +18,7 @@ body {
     margin: 1em;
     z-index: 99;
 }
+
 .icon {
     height: 1.5em;
     width: 12em;

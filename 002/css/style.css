@@ -1,0 +1,27 @@
+body {
+  margin: 0; }
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: #4bb9bf; }
+
+.menu-icon {
+  cursor: pointer;
+  height: auto;
+  width: 12em;
+  margin: 1em;
+  z-index: 99; }
+
+.icon {
+  height: 1.5em;
+  width: 12em;
+  background-color: #fff;
+  border-radius: 25px;
+  margin: 2em 0;
+  box-shadow: 0px 1px 20px rgba(0, 0, 0, 0.4); }
+
+/* Animations */
