@@ -1,0 +1,75 @@
+body {
+  margin: 0; }
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #0c2f3c; }
+
+.circle {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 1px solid #000;
+  z-index: 999; }
+  .circle .sky {
+    position: absolute;
+    background: #56ccf3;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70%;
+    z-index: 0; }
+  .circle .sun {
+    position: absolute;
+    background: #ffef0f;
+    top: 25%;
+    left: -20%;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    z-index: 2;
+    transform-origin: 50% 200%; }
+  .circle .left {
+    position: absolute;
+    bottom: 25%;
+    left: 20%;
+    height: 95px;
+    width: 100px;
+    background: #F4F4F4;
+    clip-path: polygon(0% 100%, 100% 100%, 78% 0%);
+    z-index: 5; }
+  .circle .right {
+    position: absolute;
+    bottom: 25%;
+    left: 51%;
+    height: 95px;
+    width: 71px;
+    background: #c7c3c3;
+    clip-path: polygon(30% 100%, 100% 95%, 0% 0%);
+    z-index: 4; }
+  .circle .shadow {
+    position: absolute; }
+  .circle .ground {
+    position: absolute;
+    background: #ecd896;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 30%;
+    z-index: 0; }
+
+/* Animations */
+@keyframes sun-goes-down {
+  0% {
+    transform: rotate(70deg); }
+  30% {
+    transform: rotate(30deg); }
+  70% {
+    background: #ffef0f; }
+  100% {
+    transform: rotate(70deg); } }
