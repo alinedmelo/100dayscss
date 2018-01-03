@@ -8,7 +8,7 @@
 
 :white_check_mark:  002 - [Menu Icon](https://github.com/alinedmelo/100dayscss/tree/master/002)
 
-:x: 003
+:white_check_mark: 003 - [The Pyramide](https://github.com/alinedmelo/100dayscss/tree/master/003)
 
 :x: 004
 
