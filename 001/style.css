@@ -1,5 +1,4 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
-
 body {
     justify-content: center;
     align-items: center;
@@ -12,7 +11,8 @@ body {
     background-image: -moz-linear-gradient(bottom left, #ff244d 0%, #f7b890 100%);
     background-image: linear-gradient(bottom left, #ff244d 0%, #f7b890 100%);
 }
-.logo-title {
+
+.card {
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -22,13 +22,15 @@ body {
     padding: 20px;
     border: 3px solid #fff;
 }
-.numbers {
+
+.card__numbers {
     position: relative;
     height: 200px;
     width: 70%;
     margin: 0 auto;
 }
-.one-one {
+
+.card__one-one {
     position: absolute;
     left: 0;
     width: 3em;
@@ -40,7 +42,8 @@ body {
     box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
     z-index: 5;
 }
-.one-two {
+
+.card__one-two {
     position: absolute;
     left: 40px;
     width: 3em;
@@ -50,7 +53,8 @@ body {
     box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
     z-index: 9;
 }
-.zero-one {
+
+.card__zero-one {
     position: absolute;
     left: 60px;
     width: 200px;
@@ -61,7 +65,8 @@ body {
     box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
     z-index: 5;
 }
-.zero-two {
+
+.card__zero-two {
     position: absolute;
     left: 220px;
     width: 200px;
@@ -71,9 +76,9 @@ body {
     border: 3em solid #fff;
     box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
     z-index: 1;
-
 }
-.big-text {
+
+.card__big-text {
     position: relative;
     display: block;
     height: auto;
@@ -85,7 +90,8 @@ body {
     font-weight: 800;
     color: #fff;
 }
-.small-text {
+
+.card__small-text {
     height: auto;
     width: 100%;
     margin: 0 auto;
